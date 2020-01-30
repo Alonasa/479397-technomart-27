@@ -5,30 +5,32 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
-    <header class="nav-firstline">
-      <p>
-        <a href="" class="home">Техномарт</a>
-      </p>
-      <ul>
-        <li class="search">
-          Поиск:
-        </li>
-        <li class="bookmarks">
-          <a href="">Закладки: </a>
-          <span class="quantality">
-            0
-          </span>
-        </li>
-        <li class="cart">
-          <a href="">Корзина: </a>
-          <span class="quantality">
-            10
-          </span>
-        </li>
-        <li class="order">
-          <a href="">Оформить Заказ</a>
-        </li>
-      </ul>
+    <header class="nav">
+      <div class="nav-firstline">
+        <a href="index.html">
+          <img src="img/icons/logo-technomart.svg" alt="Магазин Техномарт" width="109" height="19">
+        </a>
+        <ul>
+          <li class="search">
+            Поиск:
+          </li>
+          <li class="bookmarks">
+            <a href="">Закладки: </a>
+            <span class="quantality">
+              0
+            </span>
+          </li>
+          <li class="cart">
+            <a href="">Корзина: </a>
+            <span class="quantality">
+              10
+            </span>
+          </li>
+          <li class="order">
+            <a href="">Оформить Заказ</a>
+          </li>
+        </ul>
+      </div>
       <div class="shop">
         <p class="shop-description">
           Интернет-магазин строительных материалов и инструмента для ремонта
@@ -92,15 +94,25 @@
         </section>
         <a href="" class="button button-show">Показать</a>
       </section>
+      <section class="sorting">
+        <h3>Сортировка</h3>
+        <ul>
+          <li><a href="#">По цене</a></li>
+          <li><a href="#">По типу</a></li>
+          <li><a href="#">По функционалу</a></li>
+        </ul>
+        <a href="#">По возрастанию</a>
+        <a href="#">По убыванию</a>
+      </section>
       <section class="products">
         <article class="product">
-          <img src="https://via.placeholder.com/150x100" alt="Bosch BFG 3000" width="150" height="100">
+          <img src="img/pictures/item-image_3000.jpg" alt="Bosch BFG 3000" width="218" height="170">
           <h3 class="product-name">Перфоратор Bosch BFG 3000</h3>
           <p><del>22500 Р.</del></p>
           <span>15500 Р.</span>
         </article>
         <article class="product">
-          <img src="https://via.placeholder.com/150x100" alt="Bosch BFG 6000" width="150" height="100">
+          <img src="img/pictures/item-image_6000.jpg" alt="Bosch BFG 6000" width="218" height="170">
           <h3 class="product-name">Перфоратор Bosch BFG 6000</h3>
           <p><del>30500 Р.</del></p>
           <span>25500 Р.</span>
@@ -112,45 +124,66 @@
           <span>12500 Р.</span>
         </article>
         <article class="product">
-          <img src="https://via.placeholder.com/150x100" alt="Bosch BFG 3000" width="150" height="100">
+          <img src="img/pictures/item-image_3000.jpg" alt="Bosch BFG 3000" width="218" height="170">
           <h3 class="product-name">Перфоратор Bosch BFG 3000</h3>
           <p><del>22500 Р.</del></p>
           <span>15500 Р.</span>
         </article>
         <article class="product">
-          <img src="https://via.placeholder.com/150x100" alt="Bosch BFG 6000" width="150" height="100">
+          <img src="img/pictures/item-image_6000.jpg" alt="Bosch BFG 6000" width="218" height="170">
           <h3 class="product-name">Перфоратор Bosch BFG 6000</h3>
           <p><del>30500 Р.</del></p>
           <span>25500 Р.</span>
         </article>
         <article class="product">
-          <img src="https://via.placeholder.com/150x100" alt="Bosch BFG 2000" width="150" height="100">
+          <img src="img/pictures/item-image_2000.jpg" alt="Bosch BFG 2000" width="218" height="170">
           <h3 class="product-name">Перфоратор Bosch BFG 2000</h3>
           <span>12500 Р.</span>
         </article>
         <article class="product">
-          <img src="https://via.placeholder.com/150x100" alt="Bosch BFG 3000" width="150" height="100">
+          <img src="img/pictures/item-image_3000.jpg" alt="Bosch BFG 3000" width="218" height="170">
           <h3 class="product-name">Перфоратор Bosch BFG 3000</h3>
           <p><del>22500 Р.</del></p>
           <span>15500 Р.</span>
         </article>
         <article class="product">
-          <img src="https://via.placeholder.com/150x100" alt="Bosch BFG 6000" width="150" height="100">
+          <img src="img/pictures/item-image_6000.jpg" alt="Bosch BFG 6000" width="218" height="170">
           <h3 class="product-name">Перфоратор Bosch BFG 6000</h3>
           <p><del>30500 Р.</del></p>
           <span>25500 Р.</span>
         </article>
         <article class="product">
-          <img src="https://via.placeholder.com/150x100" alt="Bosch BFG 2000" width="150" height="100">
+          <img src="img/pictures/item-image_2000.jpg" alt="Bosch BFG 2000" width="218" height="170">
           <h3 class="product-name">Перфоратор Bosch BFG 2000</h3>
           <span>12500 Р.</span>
         </article>
+      </section>
+      <section class="catalog-pages">
+        <h2>Навигация</h2>
+        <ul>
+          <li><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+        </ul>
+        <a href="#">Следующая</a>
+      </section>
+      <section class="catelog-description">
+        <h2>Пара слов о перфораторах</h2>
+        <p>Перфоратор — универсальный строительный инструмент.
+           Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+           Существуют электромеханические и пневматические перфораторы. Современные модели
+           могут выполнять функции дрели, шуруповерта и отбойного молотка.
+           В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве
+           будут совмещены отбойный молоток и ударная дрель.
+        </p>
       </section>
     </main>
     <footer>
       <div class="footer footer-row-1">
         <div class="footer-details1">
-          <a href="">Техномарт</a>
+          <a href="index.html">
+            <img src="img/icons/logo-technomart.svg" alt="Магазин Техномарт" width="138" height="23">
+          </a>
           <ul>
             <li class="footer-info1"><a href="">Компания</a></li>
             <li class="footer-info2"><a href="">Новости</a></li>
