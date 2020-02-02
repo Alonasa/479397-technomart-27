@@ -58,7 +58,7 @@
           </li>
         </ul>
       </div>
-      <nav class="main-nav">
+      <nav class="main-nav" aria-label="Меню">
         <ul>
           <li><a href="">Главная</a></li>
           <li><a href="">Компания</a></li>
@@ -78,26 +78,72 @@
           <li class="hammer-drills"><a href="">Перфораторы</a></li>
         </ul>
       </div>
-      <section class="filter">
-        <section class="manufacturers">
-          <h2>Производители:</h2>
-          <ul>
-            <li class="manufacturer1"><a href="">Bosch</a></li>
-            <li class="manufacturer2"><a href="">Интерскол</a></li>
-            <li class="manufacturer3"><a href="">Makita</a></li>
-            <li class="manufacturer4"><a href="">Dewalt</a></li>
-            <li class="manufacturer5"><a href="">Hitachi</a></li>
+      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset class="filter-area">
+          <legend>Стоимость:</legend>
+          <div class="filter">
+            <div class="filter-range-wrapper">
+              <div class="filter-range">
+                <div class="filter-range-scale">
+                  <div class="filter-range-bar"></div>
+                </div>
+                <div class="filter-range-handle min"></div>
+                <div class="filter-range-handle max"></div>
+              </div>
+            </div>
+            <div class="filter-interval">
+              <label>От <input type="text" name="min-interval" value="0"></label>
+              <label>До <input type="text" name="max-interval" value="30000"></label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="filter-area">
+          <legend>Производители:</legend>
+          <ul class="manufacturers">
+            <li class="filter-option filter-checkbox">
+              <input class="filter-parametr filter-parametr-checkbox visually-hidden"
+              type="checkbox" name="product-group" value="producer-bosch" id="bosch" checked>
+              <label for="bosch">Bosch</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="filter-parametr filter-parametr-checkbox visually-hidden"
+              type="checkbox" name="product-group" value="producer-interskol" id="interskol">
+              <label for="interskol">Интерскол</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="filter-parametr filter-parametr-checkbox visually-hidden"
+              type="checkbox" name="product-group" value="producer-makita" id="makita" checked>
+              <label for="makita">Makita</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="filter-parametr filter-parametr-checkbox visually-hidden"
+              type="checkbox" name="product-group" value="producer-dewalt" id="dewalt">
+              <label for="dewalt">Dewalt</label>
+            </li>
+            <li class="filter-option filter-checkbox">
+              <input class="filter-parametr filter-parametr-checkbox visually-hidden"
+              type="checkbox" name="product-group" value="producer-hitachi" id="hitachi">
+              <label for="hitachi">Hitachi</label>
+            </li>
           </ul>
-        </section>
-        <section class="power-supply">
-          <h2>Питание:</h2>
-          <ul>
-            <li class="power1"><a href="">Аккумуляторные</a></li>
-            <li class="power2"><a href="">Сетевые</a></li>
+        </fieldset>
+        <fieldset class="power-supply">
+          <legend>Питание:</legend>
+          <ul class="power">
+            <li class="filter-option filter-radio">
+              <input class="filter-parametr filter-parametr-radio visually-hidden"
+              type="radio" name="product-group" value="power-batery" id="batery" checked>
+              <label for="batery">Аккумуляторные</label>
+            </li>
+            <li class="filter-option filter-radio">
+              <input class="filter-parametr filter-parametr-radio visually-hidden"
+              type="radio" name="product-group" value="power-cable" id="cable">
+              <label for="cable">Сетевые</label>
+            </li>
           </ul>
-        </section>
-        <a href="" class="button button-show">Показать</a>
-      </section>
+        </fieldset>
+        <button type="submit" class="button button-show">Показать</button>
+      </form>
       <section class="sorting">
         <h3>Сортировка</h3>
         <ul>
