@@ -1,0 +1,45 @@
+
+body {
+margin: 0;
+padding: 0;
+font-family: 'Cuprum', sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+color: #000000;
+
+background-color: #ffffff;
+}
+
+a {
+text-decoration: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.nav-firstline {
+  background-color: #293449;
+  color: #ffffff;
+}
+
+.nav-firstline a {
+  color: inherit;
+}
+
+.nav-huge-block {
+  background-color: #f4f7f9;
+}
+
+.nav p {
+  padding: 0;
+  margin: 0;
+}
