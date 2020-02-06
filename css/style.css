@@ -26,10 +26,36 @@ text-decoration: none;
   border: 0;
 }
 
+li {
+  list-style: none;
+}
+
 .nav-firstline {
   background-color: #293449;
   color: #ffffff;
 }
+
+.nav-firstline a:hover,
+.form-search:hover,
+.form-search input:hover {
+  background-color: #212a3a;
+}
+
+.form-search input {
+  background-color: #293449;
+  border: none;
+}
+
+.form-search input:focus {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.form-search input::placeholder {
+  color: #ffffff;
+
+}
+
 
 .nav-firstline a {
   color: inherit;
