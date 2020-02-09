@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1 class="visually-hidden">Перфораторы</h1>
+    <h1 class="visually-hidden">Купить перфораторы</h1>
     <header class="nav">
       <div class="nav-firstline dark-blue-background">
         <div class="container">
@@ -73,16 +73,17 @@
     <main>
       <div class="container">
         <div class="breadcrumbs">
-          <ul>
-            <li class="catalog"><a href="">Каталог</a></li>
-            <li class="tools"><a href="">Инструмент</a></li>
-            <li class="hammer-drills"><a href="">Перфораторы</a></li>
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item catalog"><a href="">Каталог</a></li>
+            <li class="breadcrumbs-item tools"><a href="">Инструмент</a></li>
+            <li class="breadcrumbs-item hammer-drills"><a href="">Перфораторы</a></li>
           </ul>
+          <h2 class="breadcrumbs-current">Перфораторы</h2>
         </div>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <h3>Фильтр:</h3>
+          <h3 class="filters-headers">Фильтр:</h3>
           <fieldset class="filter-area">
-            <legend>Стоимость:</legend>
+            <legend class="filter-name">Стоимость:</legend>
             <div class="filter">
               <div class="filter-range-wrapper">
                 <div class="filter-range">
@@ -100,7 +101,7 @@
             </div>
           </fieldset>
           <fieldset class="filter-area">
-            <legend>Производители:</legend>
+            <legend class="filter-name">Производители:</legend>
             <ul class="manufacturers">
               <li class="filter-option filter-checkbox">
                 <input class="filter-parametr filter-parametr-checkbox visually-hidden"
@@ -130,7 +131,7 @@
             </ul>
           </fieldset>
           <fieldset class="power-supply">
-            <legend>Питание:</legend>
+            <legend class="filter-name">Питание:</legend>
             <ul class="power">
               <li class="filter-option filter-radio">
                 <input class="filter-parametr filter-parametr-radio visually-hidden"
@@ -149,9 +150,9 @@
         <section class="sorting">
           <h3>Сортировка:</h3>
           <ul>
-            <li><a href="#">По цене</a></li>
-            <li><a href="#">По типу</a></li>
-            <li><a href="#">По функционалу</a></li>
+            <li class="red-text"><a href="#">По цене</a></li>
+            <li class="red-dotted"><a href="#">По типу</a></li>
+            <li class="red-dotted"><a href="#">По функционалу</a></li>
           </ul>
           <a href="#">По возрастанию</a>
           <a href="#">По убыванию</a>
@@ -291,23 +292,25 @@
           </article>
         </section>
         <section class="popup-added-to-cart">
-          <h2>Товар добавлен в корзину!</h2>
-          <a href="#">Оформить заказ</a>
-          <button type="button">Продолжить покупки</button>
+          <h2 class="popup-header">Товар добавлен в корзину!</h2>
           <button type="button" aria-label="Закрыть окно"></button>
+          <div class="popup-order-window">
+            <a class="button button-red button-make-order" href="#">Оформить заказ</a>
+            <button type="button">Продолжить покупки</button>
+          </div>
         </section>
         <section class="catalog-pages">
-          <h2>Навигация</h2>
-          <ul>
-            <li><a href="#">1</a></li>
-            <li><a href="#">2</a></li>
-            <li><a href="#">3</a></li>
+          <h3 class="visually-hidden">Навигация</h3>
+          <ul class="pages-nav">
+            <li><a class="button-white button-nav page-active" href="#">1</a></li>
+            <li><a class="button-white button-nav page-inactive" href="#">2</a></li>
+            <li><a class="button-white button-nav page-inactive" href="#">3</a></li>
+            <li><a class="button-white button-nav page-next" href="#">Следующая</a></li>
           </ul>
-          <a href="#">Следующая</a>
         </section>
-        <section class="catelog-description">
-          <h2>Пара слов о перфораторах</h2>
-          <p>Перфоратор — универсальный строительный инструмент.
+        <section class="catalog-description">
+          <h2 class="catalog-header">Пара слов о перфораторах</h2>
+          <p class="catalog-article">Перфоратор — универсальный строительный инструмент.
              Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
              Существуют электромеханические и пневматические перфораторы. Современные модели
              могут выполнять функции дрели, шуруповерта и отбойного молотка.
