@@ -7,12 +7,16 @@ font-size: 16px;
 font-weight: 400;
 line-height: 20px;
 color: #000000;
-
 background-color: #ffffff;
 }
 
 a {
+color: inherit;
 text-decoration: none;
+}
+
+li {
+  list-style: none;
 }
 
 .visually-hidden {
@@ -26,13 +30,19 @@ text-decoration: none;
   border: 0;
 }
 
-li {
-  list-style: none;
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px
 }
 
-.nav-firstline {
+.dark-blue-background {
   background-color: #293449;
   color: #ffffff;
+}
+
+.light-blue-background {
+  background-color: #32425c;
 }
 
 .nav-firstline a:hover,
@@ -41,8 +51,13 @@ li {
   background-color: #212a3a;
 }
 
+.nav-firstline a:active,
+.form-search:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
 .form-search input {
-  background-color: #293449;
   border: none;
 }
 
@@ -53,12 +68,20 @@ li {
 
 .form-search input::placeholder {
   color: #ffffff;
-
 }
 
+.button-green {
+  background-color: #63a63e;
+}
 
-.nav-firstline a {
-  color: inherit;
+.nav-firstline .button-green:hover,
+.button-green:hover {
+  background-color: #5fbb2d;
+}
+
+.nav-firstline .button-green:active,
+.button-green:active {
+  background-color: #518534;
 }
 
 .nav-huge-block {
@@ -68,4 +91,358 @@ li {
 .nav p {
   padding: 0;
   margin: 0;
+}
+
+.description-red {
+  color: #ee3643;
+}
+
+.shop-description {
+  font-style: italic;
+  line-height: 1.44;
+}
+
+.text-large {
+  font-size: 21px;
+}
+
+.shop-contacts {
+  font-size: 14px;
+  line-height: 1.71;
+  color: #32425c;
+}
+
+.user-navigation a,
+.user-name {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.user-block ul,
+.main-nav ul,
+.footer-details1 ul,
+.footer-details2 ul {
+  padding: 0;
+  margin: 0;
+}
+
+.main-nav {
+  box-shadow: inset 0px -5px 0 0 #293449;
+}
+
+.nav-item {
+  color: #ffffff;
+  font-size: 17px;
+  line-height: 1;
+}
+
+.nav-item:hover {
+  background-color: #293449;
+}
+
+.nav-item:active {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.offers {
+  padding: 0;
+  margin: 0;
+}
+
+.offers-item {
+  width: 300px;
+  height: 123px;
+  background-color: #ffbf47;
+  color: #ffffff;
+}
+
+.offers-item:nth-child(1) {
+  background-color: #ffbf47;
+}
+
+.offers-item:nth-child(2) {
+  background-color: #3bbce3;
+}
+
+.offers-item:nth-child(3) {
+  background-color: #dc91d8;
+}
+
+.offers-item:nth-child(4){
+  background-color: #8ed78f;
+}
+
+.offers-item:nth-child(5) {
+  background-color: #ffc047;
+}
+
+.offers-item h3 {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+}
+
+.button {
+  color: #ffffff;
+  text-transform: uppercase;
+  border: none;
+}
+
+.button-black {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.slider {
+  padding: 0;
+  margin: 0;
+}
+
+.button-red {
+  background-color: #ee3643;
+}
+
+.black-transparent {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.black-transparent h3 {
+  margin: 0;
+  width: 94px;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1;
+  color: #ffffff;
+}
+
+.black-transparent p {
+  font-size: 18px;
+  line-height: 1.33;
+  color: #ffffff;
+}
+
+.popular-items-list {
+  padding: 0;
+  margin: 0;
+}
+
+.popular-header h2 {
+  font-size: 21px;
+  line-height: 1;
+  text-transform: uppercase;
+  font-stretch: normal;
+  font-weight: normal;
+  color: #32425c;
+}
+
+.popular-item {
+  width: 220px;
+  border: solid 1px #eaeaea;
+}
+
+.popular-item-header {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.11;
+  text-align: center;
+}
+
+.old-price {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  text-align: center;
+  color: #a9a9a9;
+}
+
+.new-price {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.06;
+  text-align: center;
+  color: #ffffff;
+}
+
+.button-bookmarks {
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  text-transform: uppercase;
+  color: #32425c;
+  border: solid 3px #63a63e;
+  background-color: #ffffff;
+}
+
+.button-bookmarks:hover {
+  border: solid 3px #32425c;
+}
+
+.button-bookmarks:active {
+  opacity: 0.3;
+}
+
+.button-to-cart {
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #63a63e;
+  border: none;
+}
+
+.button-to-cart:hover {
+  box-shadow: inset 0px -3px 0 0 #367315;
+  background-color: #5fbb2d;
+}
+
+.button-to-cart:active {
+  background-color: #518534;
+}
+
+.popular-producers-list {
+  padding: 0;
+  margin: 0;
+}
+
+.popular-producer {
+  width: 220px;
+  height: 145px;
+  border: solid 1px #eaeaea;
+  text-align: center;
+}
+
+.popular-producer:hover {
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-producer:active {
+  opacity: 0.3;
+}
+
+.services {
+  background-color: #f4f7f9;
+}
+
+.services-list,
+.services-list-inner {
+  padding: 0;
+  margin: 0;
+}
+
+.services-header {
+  font-size: 30px;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.services-button {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.43;
+  border: none;
+  box-shadow: 0px 1px 0 0 #293449, inset 0px 1px 0 0 #405069;
+  background-color: #32425c;
+  color: #ffffff;
+}
+
+.button-choosen {
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.service-inner-name {
+ font-size: 36px;
+ font-weight: normal;
+ line-height: 1;
+ color: #32425c;
+}
+
+.service-inner-description,
+.services-advantages,
+.description-offers {
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 1.85;
+}
+
+.delivery-partner {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1.11;
+}
+
+.description-company-offer {
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.modal-contact {
+  width: 620px;
+  box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
+}
+
+.send-request input {
+  width: 220px;
+  height: 38px;
+  border: solid 2px #dee3e4;
+}
+
+.send-request label {
+  font-size: 18px;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.footer-logo img {
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+
+.footer-links,
+.footer-contacts {
+  font-size: 18px;
+  line-height: 1.33;
+}
+
+.footer-services {
+  color: #f1f5f7;
+}
+
+.footer-contacts {
+  margin: 0;
+  color: #f3f7f9;
+}
+
+.text-yellow {
+  color: #ffd180;
+}
+
+.footer-row-3 {
+  font-size: 16px;
+  line-height: 1.13;
+}
+
+.rights-description {
+  margin: 0;
+}
+
+.product-hover {
+  width: 220px;
+  box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+  background-color: #ffffff;
 }
