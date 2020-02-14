@@ -208,8 +208,15 @@ li {
   background-color: #f4f7f9;
 }
 
+.shop p {
+  margin: 0;
+}
+
 .nav-secondline {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .description-red {
@@ -221,8 +228,8 @@ li {
   line-height: 1.44;
   width: 198px;
   min-height: 60px;
-  padding-top: 54px;
-  padding-bottom: 44px;
+  padding-top: 49px;
+  padding-bottom: 40px;
 }
 
 .text-large {
@@ -256,12 +263,28 @@ li {
 
 .main-nav {
   box-shadow: inset 0px -5px 0 0 #293449;
+  padding: 0 20px;
+}
+
+.navigation {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 
 .nav-item {
   color: #ffffff;
   font-size: 17px;
   line-height: 1;
+}
+
+.nav-title {
+  display: block;
+  padding: 21px 30px 23px;
+}
+
+.navigation:first {
+  padding-left: 50px;
 }
 
 .nav-item:hover {
