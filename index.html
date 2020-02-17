@@ -241,10 +241,10 @@
         <div class="container company-items">
           <div class="description-company">
             <h2 class="description-company-offer">Компания «Техномарт»</h2>
-            <p class="description-offers">Настоящий мужской шоппинг начинается здесь!
+            <p class="description-offers mens-shopping">Настоящий мужской шоппинг начинается здесь!
                Огромный выбор товаров для ремонта и строительства
                не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
-            <p class="description-offers">Мы можем доставить ваш товар в самые отдаленные точки России!</p>
+            <p class="description-offers description-delivery">Мы можем доставить ваш товар в самые отдаленные точки России!</p>
             <p class="delivery description-offers">Техномарт работает со многими транспортными компаниями:</p>
             <ul class="delivery-partners">
               <li class="delivery-partner">Деловые линии</li>
@@ -255,23 +255,27 @@
           </div>
           <div class="description-contacts">
             <h2 class="description-company-offer">Контакты</h2>
-            <p class="description-offers">вы можете забать товар сами, заехав в наш офис:</p>
+            <p class="description-offers contact-offer">Вы можете забрать товар сами, заехав в наш офис:</p>
             <p class="contacts-map">
               <img src="img/pictures/map.png" alt="Адрес офиса: г.Санкт-Петербург, ул.Б.Конюшенная, д.19" width="300" height="158" class="map-img">
             </p>
             <a href="contact-form.html" class="button button-red button-contacts" target="_parent">Заблудились? Напишите нам!</a>
             <section class="modal modal-contact">
-              <form class="send-request" action="/send.php" method="post">
-                <label for="name">Ваше имя:</label>
-                <input type="text" name="name" id="name" placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{3,}" autofocus/>
-                <label for="e-mail">Ваш e-mail:</label>
-                <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com"/>
-                <label for="message">Текст письма:</label>
-                <textarea name="message" id="message" rows="10" cols="15" placeholder="В свободной форме"></textarea>
-                <button class="button button-red" type="submit" name="send-request">Отправить</button>
-                <button type="button" name="button-close-modal">
-                  <span class="visually-hidden">Закрыть</span>
-                </button>
+              <form class="modal-request-form" action="/send.php" method="post">
+                <div class="modal-request">
+                  <div class="modal-contact-data">
+                    <label for="name">Ваше имя:
+                    <input type="text" name="name" id="name" placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{3,}" autofocus/></label>
+                    <label for="e-mail">Ваш e-mail:
+                    <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com"/></label>
+                  </div>
+                  <label class="label-message" for="message">Текст письма:</label>
+                  <textarea name="message" id="message" rows="5" cols="15" placeholder="В свободной форме"></textarea>
+                </div>
+                <p class="modal-send">
+                  <button class="button button-red button-send" type="submit" name="send-request">Отправить</button>
+                </p>
+                <button class="modal-close" type="button" name="button-close-modal" aria-label="Закрыть окно"></button>
               </form>
             </section>
           </div>
