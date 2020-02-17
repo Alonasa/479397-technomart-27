@@ -724,17 +724,16 @@ li {
 }
 
 .modal {
-  width: 620px;
   position: fixed;
   box-shadow: 0px 20px 40px 0 rgba(0, 0, 0, 0.75);
   background-color: #ffffff;
-  border-top: 7px solid #ee3643;
 }
 
 .modal-contact {
   left: 50%;
   margin-left: -311px;
   top: 71px;
+  border-top: 7px solid #ee3643;
   display: none;
 }
 
@@ -762,7 +761,7 @@ li {
   margin-top: 10px;
 }
 
-.modal-contact-data input:hover
+.modal-contact-data input:hover{}
 
 .modal-contact-data [placeholder],
 .modal-request textarea {
@@ -789,7 +788,7 @@ li {
   margin: 20px 0 10px;
 }
 
-.send-request textarea {
+.modal-request textarea {
   border: solid 2px #dee3e4;
   width: 426px;
   height: 94px;
@@ -838,6 +837,20 @@ li {
 
 .modal-close::after {
   transform: rotate(-45deg);
+}
+
+.modal-map {
+  top: 50%;
+  left: 50%;
+  width: 940px;
+  height: 446px;
+  margin-top: -281px;
+  margin-left: -471px;
+  display: none;
+}
+
+.modal-map p {
+  margin: 0;
 }
 
 .footer-logo img {
