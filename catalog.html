@@ -59,25 +59,26 @@
             </ul>
           </div>
         </div>
-      </div>
-      <div class="container">
-        <nav class="main-nav light-blue-background" aria-label="Меню">
-          <ul class="navigation ">
-            <li class="nav-item"><a class="nav-title" href="index.html">Главная</a></li>
-            <li class="nav-item"><a class="nav-title" href="#">Компания</a></li>
-            <li class="nav-item"><a class="nav-title" href="catalog.html">Каталог</a></li>
-            <li class="nav-item"><a class="nav-title" href="#">Новости</a></li>
-            <li class="nav-item"><a class="nav-title" href="#">Спецпредложения</a></li>
-            <li class="nav-item"><a class="nav-title" href="#">Доставка</a></li>
-            <li class="nav-item"><a class="nav-title" href="#">Контакты</a></li>
-          </ul>
-        </nav>
+        <div class="container">
+          <nav class="main-nav light-blue-background" aria-label="Меню">
+            <ul class="navigation ">
+              <li class="nav-item"><a class="nav-title" href="index.html">Главная</a></li>
+              <li class="nav-item"><a class="nav-title" href="#">Компания</a></li>
+              <li class="nav-item"><a class="nav-title" href="catalog.html">Каталог</a></li>
+              <li class="nav-item"><a class="nav-title" href="#">Новости</a></li>
+              <li class="nav-item"><a class="nav-title" href="#">Спецпредложения</a></li>
+              <li class="nav-item"><a class="nav-title" href="#">Доставка</a></li>
+              <li class="nav-item"><a class="nav-title" href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
-    <main>
-      <div class="container">
+    <main class="page-inner">
+      <div class="container inner-wrapper">
         <div class="breadcrumbs">
           <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item to-main"><a href="index.html">На Главную</a></li>
             <li class="breadcrumbs-item catalog"><a href="">Каталог</a></li>
             <li class="breadcrumbs-item tools"><a href="">Инструмент</a></li>
             <li class="breadcrumbs-item hammer-drills"><a href="">Перфораторы</a></li>
@@ -85,10 +86,10 @@
           <h2 class="breadcrumbs-current">Перфораторы</h2>
         </div>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <h3 class="filters-headers">Фильтр:</h3>
+          <h3 class="filters-headers light-beige">Фильтр:</h3>
           <fieldset class="filter-area">
-            <legend class="filter-name">Стоимость:</legend>
-            <div class="filter">
+            <legend class="filter-name">Цена:</legend>
+            <div class="filter-price">
               <div class="filter-range-wrapper">
                 <div class="filter-range">
                   <div class="filter-range-scale">
@@ -99,8 +100,8 @@
                 </div>
               </div>
               <div class="filter-interval">
-                <label>От <input type="text" name="min-interval" value="0"></label>
-                <label>До <input type="text" name="max-interval" value="30000"></label>
+                <label><span class="visually-hidden">От</span><input type="text" name="min-interval" value="0"></label>
+                <label><span class="visually-hidden">До</span><input type="text" name="max-interval" value="30000"></label>
               </div>
             </div>
           </fieldset>
@@ -134,7 +135,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="power-supply">
+          <fieldset class="filter-area">
             <legend class="filter-name">Питание:</legend>
             <ul class="power">
               <li class="filter-option filter-radio">
@@ -151,17 +152,19 @@
           </fieldset>
           <button type="submit" class="button button-show">Показать</button>
         </form>
-        <section class="sorting">
-          <h3>Сортировка:</h3>
-          <ul>
-            <li class="red-text"><a href="#">По цене</a></li>
-            <li class="red-dotted"><a href="#">По типу</a></li>
-            <li class="red-dotted"><a href="#">По функционалу</a></li>
-          </ul>
-          <a href="#">По возрастанию</a>
-          <a href="#">По убыванию</a>
-        </section>
         <section class="products">
+          <div class="sorting light-beige">
+            <h3>Сортировка:</h3>
+            <ul class="sorting-block">
+              <li class="red-text"><a href="#">По цене</a></li>
+              <li class="red-dotted"><a href="#">По типу</a></li>
+              <li class="red-dotted"><a href="#">По функционалу</a></li>
+            </ul>
+            <div class="sorting-buttons">
+              <a class="button-sorting arrow-up arow-up-set visually-hidden" href="#">По возрастанию</a>
+              <a class="button-sorting arrow-down visually-hidden" href="#">По убыванию</a>
+            </div>
+          </div>
           <article class="product">
             <img src="img/pictures/item-image_3000.jpg" alt="Bosch BFG 3000" width="218" height="170">
             <h3 class="product-name">Перфоратор Bosch BFG 3000</h3>

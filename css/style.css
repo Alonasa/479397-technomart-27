@@ -215,8 +215,7 @@ li {
 }
 
 .huge-block-inner {
-  padding: 0;
-  margin: 0;
+  margin-bottom: 0;
 }
 
 .shop p {
@@ -994,15 +993,40 @@ li {
   justify-content: space-between;
 }
 
+.page-inner .inner-wrapper {
+  width: 940px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.breadcrumbs {
+  width: 940px;
+}
+
+.breadcrumbs-list {
+  padding: 0;
+  margin: 0;
+  padding: 20px 0 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .breadcrumbs-item {
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 1.38;
   text-transform: uppercase;
+  padding-left: 42px;
 }
 
 .breadcrumbs-current {
-  font-size: 23px;
+  margin: 0;
+  margin-bottom: 20px;
+  width: 940px;
+  padding: 36px 28px 34px;
+  box-sizing: border-box;
+  font-size: 30px;
   color: #32425c;
   text-transform: uppercase;
   background-color: #f2f6f8;
@@ -1010,11 +1034,32 @@ li {
 
 .filters-headers,
 .sorting,
+.sorting h3,
 .filter {
+ margin: 0;
  font-family: 'PT Sans', 'Arial', sans-serif;
  font-size: 13px;
  line-height: 1.38;
  text-transform: uppercase;
+}
+
+.filter {
+  width: 220px;
+}
+
+.filter-area {
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+.filter-area:not(:last-of-type) {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filters-headers {
+  padding: 10px 20px;
+  margin-bottom: 12px;
 }
 
 .filter-name {
@@ -1026,6 +1071,164 @@ li {
 .filter-option label {
   font-size: 15px;
   line-height: 1.33;
+}
+
+.filter-range-wrapper {
+  margin-bottom: 9px;
+  margin-top: 14px;
+  padding: 39px 20px;
+  border-radius: 3px;
+  background-color: #f7f3ec;
+}
+
+.filter-range {
+  position: relative;
+}
+
+.filter-range-scale {
+  height: 2px;
+  background-color: #d7dcde;
+}
+
+.filter-range-bar {
+  height: 2px;
+  width: 84%;
+  background-color: #00ca74;
+}
+
+.filter-range-handle {
+  position: absolute;
+  top: -9px;
+  width: 4px;
+  height: 4px;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  background-color: #99a0a2;
+  cursor: pointer;
+}
+
+.filter-range-handle.min {
+  left: 0%;
+}
+
+.filter-range-handle.max {
+  left: 77%;
+}
+
+.filter-interval {
+  font-size: 0;
+  margin-bottom: 25px;
+}
+
+.filter-interval label {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  font-size: 17px;
+  line-height: 1.06;
+  text-transform: uppercase;
+}
+
+.filter-interval label:last-child {
+  text-align: right;
+}
+
+.power,
+.manufacturers {
+  padding: 0;
+}
+
+.filter-interval input {
+  width: 95px;
+  height: 36px;
+  border-radius: 2px;
+  border: none;
+  font: inherit;
+  color: inherit;
+  text-align: center;
+  background-color: #f7f3ec;
+}
+
+.filter-parametr + label {
+	color: #283136;
+}
+
+.filter-parametr:hover + label,
+.filter-parametr:focus + label {
+	color: #000000;
+}
+
+.filter-parametr:disabled + label {
+  color: #283136;
+  opacity: 0.3;
+}
+
+.filter-area ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 14px;
+  list-style: none;
+}
+
+.filter-area:nth-child(3) {
+  margin-top: 16px;
+  margin-bottom: 31px;
+}
+
+.filter-radio label {
+  position: relative;
+}
+
+.power label:hover::before,
+.power input[type="radio"]:checked + label:hover::before,
+.manufacturers label:hover::before,
+.manufacturers input[type="checkbox"]:checked + label:hover::before {
+  opacity: 1;
+}
+
+.power input[type="radio"]:checked + label::before {
+  background-image: url("../img/icons/radio-on.svg");
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.power label::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: -2px;
+  width: 28px;
+  height: 28px;
+  background-image: url("../img/icons/radio-off.svg");
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.filter-checkbox label {
+  position: relative;
+}
+
+.manufacturers input[type="checkbox"]:checked + label::before {
+  background-image: url("../img/icons/checkbox-on.svg");
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.manufacturers label::before {
+  content: "";
+  position: absolute;
+  left: -34px;
+  top: 0;
+  width: 28px;
+  height: 24px;
+  background-image: url("../img/icons/checkbox-off.svg");
+  background-repeat: no-repeat;
+  opacity: 0.6;
+}
+
+.filter-option {
+  margin-bottom: 16px;
+  padding-left: 34px;
 }
 
 .button-show,
@@ -1040,6 +1243,40 @@ li {
 
 .red-text {
   color: #ee3643;
+}
+
+.sorting {
+  width: 700px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.light-beige {
+  background-color: #f7f3ec;
+}
+
+.sorting-block {
+  padding: 0;
+  margin: 0;
+  width: 355px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.products {
+  width: 700px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.product {
+  width: 218px;
+  margin-bottom: 20px;
+  border: solid 1px #e5e5e5;
+  background-color: #ffffff;
 }
 
 .product-name {
