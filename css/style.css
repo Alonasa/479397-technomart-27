@@ -1048,6 +1048,7 @@ li {
 
 .filter {
   width: 220px;
+  min-height: 1200px;
 }
 
 .filter-area {
@@ -1275,6 +1276,7 @@ li {
   margin: 0;
   width: 355px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 
@@ -1311,12 +1313,28 @@ li {
   margin: 0;
 }
 
+.catalog-pages {
+  width: 700px;
+}
+
+.catalog-nav {
+  display: flex;
+}
+
 .button-nav {
-  padding: 13px;
+  font-family: 'PT Sans', 'Arial', sans-serif;
+  text-transform: uppercase;
+  padding: 0 15px;
+  line-height: 38px;
+  text-align: center;
+  border-radius: 4px;
+  margin-right: 9px;
+  margin-bottom: 60px;
 }
 
 .page-next {
-  padding: 14px 32px;
+  width: auto;
+  padding: 0 30px;
 }
 
 .modal-added-to-cart {
@@ -1374,7 +1392,13 @@ li {
   margin-right: 16px;
 }
 
+.catalog-description {
+  background-color: #f4f7f9;
+}
+
 .catalog-header {
+  margin-top: 0;
+  padding-top: 64px;
   font-size: 30px;
   line-height: 1;
   font-weight: 400;
@@ -1382,7 +1406,13 @@ li {
 }
 
 .catalog-article {
+  margin: 0;
+  width: 911px;
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 13px;
   line-height: 1.85;
+}
+
+.secondline-description {
+  padding-bottom: 70px;
 }
