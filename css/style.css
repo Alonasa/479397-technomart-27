@@ -1313,10 +1313,6 @@ li {
   margin: 0;
 }
 
-.catalog-pages {
-  width: 700px;
-}
-
 .catalog-nav {
   display: flex;
 }
@@ -1335,6 +1331,10 @@ li {
 .page-next {
   width: auto;
   padding: 0 30px;
+}
+
+.catalog-pages {
+  width: 700px;
 }
 
 .modal-added-to-cart {
