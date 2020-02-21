@@ -332,34 +332,106 @@ li {
 .offers-item {
   width: 300px;
   height: 123px;
+  padding: 20px;
+  box-sizing: border-box;
   margin-bottom: 20px;
   background-color: #ffbf47;
   color: #ffffff;
+  position: relative;
+  overflow: hidden;
+
 }
 
 .item-light-orange {
   background-color: #ffbf47;
 }
 
+.item-light-orange::before {
+  position: absolute;
+  content: "";
+  width: 60px;
+  height: 59px;
+  top: 0;
+  right: 0;
+  background-image: url("../img/pictures/new-flag.png");
+  background-repeat: no-repeat;
+}
+
+.item-light-orange::after {
+  position: absolute;
+  content: "";
+  width: 44px;
+  height: 65px;
+  background-image: url("../img/icons/icon-1.svg");
+  background-repeat: no-repeat;
+  top: 31px;
+  right: 43px;
+}
+
 .item-blue {
   background-color: #3bbce3;
+}
+
+.item-blue::after {
+  position: absolute;
+  content: "";
+  width: 75px;
+  height: 61px;
+  background-image: url("../img/icons/icon-2.svg");
+  background-repeat: no-repeat;
+  top: 33px;
+  right: 28px;
 }
 
 .item-violet {
   background-color: #dc91d8;
 }
 
+.item-violet::after {
+  position: absolute;
+  content: "";
+  width: 78px;
+  height: 62px;
+  background-image: url("../img/icons/icon-3.svg");
+  background-repeat: no-repeat;
+  top: 31px;
+  right: 31px;
+}
+
 .item-green {
   background-color: #8ed78f;
+}
+
+.item-green::after {
+  position: absolute;
+  content: "";
+  width: 59px;
+  height: 72px;
+  background-image: url("../img/icons/icon-4.svg");
+  background-repeat: no-repeat;
+  top: 26px;
+  right: 45px;
 }
 
 .item-orange {
   background-color: #ffc047;
 }
 
+.item-orange::after {
+  position: absolute;
+  content: "";
+  width: 78px;
+  height: 63px;
+  background-image: url("../img/icons/icon-5.svg");
+  background-repeat: no-repeat;
+  top: 32px;
+  right: 31px;
+}
+
 .offers-item h3 {
   padding: 0;
   margin: 0;
+  margin-bottom: 12px;
   font-size: 24px;
   font-weight: bold;
   line-height: 1.25;
@@ -377,6 +449,10 @@ li {
 
 .button-black {
   background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin-left: 4px;
+  margin-right: 120px;
+  padding: 10px;
 }
 
 .slider-block {
