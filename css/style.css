@@ -15,10 +15,6 @@ color: inherit;
 text-decoration: none;
 }
 
-li {
-  list-style: none;
-}
-
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -257,6 +253,24 @@ li {
   width: 281px;
 }
 
+.user-navigation,
+.navigation,
+.offers,
+.slider,
+.popular-items-list,
+.popular-producers-list,
+.services-list,
+.services-list-inner,
+.delivery-partners,
+.footer-services,
+.footer-products,
+.social-buttons,
+.breadcrumbs-list,
+.sorting-block,
+.catalog-nav {
+  list-style: none;
+}
+
 .user-navigation a,
 .user-name {
   color: #000000;
@@ -445,6 +459,7 @@ li {
   border-radius: 3px;
   padding: 9px 15px;
   text-align: center;
+  display: block;
 }
 
 .button-black {
@@ -457,7 +472,7 @@ li {
 
 .slider-block {
   width: 620px;
-  height: 266px;
+  position: relative;
 }
 
 .slider {
@@ -466,7 +481,22 @@ li {
 }
 
 .slider-item {
-  margin-bottom: 20px;
+  padding-bottom: 1px;
+  background-color: #bfb1a4;
+}
+
+.slider-item .button {
+  margin: 20px 400px 21px 25px;
+}
+
+.slider-item:nth-child(1) {
+  background-image: url("../img/pictures/slide-image1.png");
+  background-repeat: no-repeat;
+}
+
+.slider-item:nth-child(2) {
+  background-image: url("../img/pictures/slide-image2.png");
+  background-repeat: no-repeat;
 }
 
 .slider-2 {
@@ -479,6 +509,9 @@ li {
 
 .black-transparent {
   background-color: rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  padding-bottom: 22px;
+  margin-bottom: 100px;
 }
 
 .black-transparent h3 {
@@ -487,13 +520,65 @@ li {
   font-size: 36px;
   font-weight: bold;
   line-height: 1;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
 .black-transparent p {
+  margin: 0;
   font-size: 18px;
   line-height: 1.33;
   color: #ffffff;
+}
+
+.slider-navigation {
+  cursor: pointer;
+  text-align: center;
+}
+
+.slider-controllers {
+  position: absolute;
+  width: 80px;
+  height: 20px;
+  bottom: 54px;
+  left: 44%;
+}
+
+.slider-controller {
+  padding: 0;
+  margin-right: 6px;
+  width: 10px;
+  height: 10px;
+  border: 2px solid #f4f7f9;
+  border-radius: 50%;
+}
+
+.controller-checked {
+  background-color: #ee3643;
+}
+
+.slider-arrow {
+  position: absolute;
+  width: 22px;
+  height: 40px;
+  top: 40%;
+  border: none;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-size: 22px 40px;
+  cursor: pointer;
+}
+
+.slider-arrow.arrow-next {
+  left: 25px;
+
+  background-image: url("../img/icons/icon-left.svg");
+}
+
+.slider-arrow.arrow-previous {
+  right: 20px;
+
+  background-image: url("../img/icons/icon-right.svg");
 }
 
 .popular-items {
