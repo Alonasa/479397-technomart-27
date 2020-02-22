@@ -915,13 +915,67 @@ text-decoration: none;
 }
 
 .services-list {
+  position: relative;
   width: 240px;
   margin-right: 80px;
   font-size: 21px;
 }
 
+.services-list::after {
+  position: absolute;
+  content: "";
+  width: 10px;
+  height: 279px;
+  background-image: url("../img/pictures/shadow.png");
+  background-repeat: no-repeat;
+  top: 50%;
+  right: 0;
+  background-size: 100%;
+  transform: translateY(-50%);
+}
+
 .services-list-inner {
   width: 275px;
+}
+
+.service-offer {
+  position: relative;
+}
+
+.service-delivery::after {
+  position: absolute;
+  content: "";
+  width: 468px;
+  height: 261px;
+  background-image: url("../img/pictures/delivery.png");
+  background-repeat: no-repeat;
+  top: 23px;
+  right: -344px;
+  background-size: 100%;
+}
+
+.service-warrancy::after {
+  position: absolute;
+  content: "";
+  width: 389px;
+  height: 283px;
+  background-image: url("../img/pictures/guarantee.png");
+  background-repeat: no-repeat;
+  top: 1px;
+  right: -353px;
+  background-size: 100%;
+}
+
+.service-credit::after {
+  position: absolute;
+  content: "";
+  width: 465px;
+  height: 285px;
+  background-image: url("../img/pictures/credit.png");
+  background-repeat: no-repeat;
+  top: 0;
+  right: -355px;
+  background-size: 100%;
 }
 
 .services-header {
@@ -989,8 +1043,22 @@ text-decoration: none;
   margin-top: 22px;
 }
 
+.service-warrancy p {
+  width: 377px;
+}
+
+.service-credit p {
+  width: 280px;
+}
+
 .description-services {
   margin-bottom: 66px;
+}
+
+.button-credit-request {
+  width: 195px;
+  box-sizing: border-box;
+  margin-top: 28px;
 }
 
 .company-items {
@@ -1013,6 +1081,17 @@ text-decoration: none;
   line-height: 1.11;
   margin: 21px 0;
   padding-left: 35px;
+  position: relative;
+}
+
+.delivery-partner::before {
+  position: absolute;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #ee3643;
+  top: 8px;
+  left: 0;
 }
 
 .description-company {
