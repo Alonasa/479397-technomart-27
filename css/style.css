@@ -190,6 +190,18 @@ text-decoration: none;
   opacity: 0.5;
 }
 
+.cart-inner {
+  background-color: #ee3643;
+}
+
+.nav-firstline .cart-inner:hover {
+  background-color: #ca2c37;
+}
+
+.nav-firstline .cart-inner:active {
+  background-color: #ba2732;
+}
+
 .button-green {
   background-color: #63a63e;
 }
@@ -1292,7 +1304,16 @@ text-decoration: none;
   margin-top: 10px;
 }
 
-.modal-contact-data input:hover{}
+.modal-contact-data input:focus,
+.modal-request textarea:focus {
+  border-color: #ee3643;
+  outline: solid 3px #ee3643;
+}
+
+.modal-contact-data input:hover,
+.modal-request textarea:hover {
+  border-color: #b5b5b5;
+}
 
 .modal-contact-data [placeholder],
 .modal-request textarea {
@@ -1334,11 +1355,11 @@ text-decoration: none;
 }
 
 .button-send {
+  width: 460px;
   display: inline-block;
   word-break: break-all;
   padding: 11px 15px;
-  width: 460px;
-  margin: 0 auto;
+  margin-left: 80px;
 }
 
 .modal-close {
@@ -1378,6 +1399,7 @@ text-decoration: none;
   height: 446px;
   margin-top: -281px;
   margin-left: -471px;
+  z-index: 100;
   display: none;
 }
 
@@ -1831,6 +1853,14 @@ text-decoration: none;
   box-sizing: border-box;
 }
 
+.button-show:hover {
+  border-color: #000000;
+}
+
+.button-show:active {
+  border-color: rgba(0, 0, 0, 0.4);
+}
+
 .red-text {
   color: #ee3643;
 }
@@ -1874,21 +1904,38 @@ text-decoration: none;
   justify-content: space-between;
 }
 
-.sorting-button:nth-child(n+2) a {
+.sorting-button-active {
+  color: #ee3643;
+}
+
+.sorting-button-inactive {
   color: rgba(0, 0, 0, 0.3);
   border-bottom: 1px dotted #ee3643;
+}
+
+.sorting-button:hover {
+  color: #000000;
+  border-bottom: 1px solid #ee3643;
 }
 
 .sorting-buttons {
   width: 40px;
 }
 
+.arrow:hover path{
+  fill: #000000;
+}
+
 .arrow-up {
   margin-right: 14px;
 }
 
-.arrow-up path {
+.arrow-set path {
   fill: #ee3643;
+}
+
+.arrow-not-set path {
+  fill: rgba(0, 0, 0, 0.3);
 }
 
 .product {
@@ -1928,6 +1975,16 @@ text-decoration: none;
   vertical-align: middle;
   border-radius: 4px;
   margin-right: 9px;
+}
+
+.button-nav:hover {
+  border: solid 1px #bdc6ca;
+  background-color: #ffffff;
+}
+
+.button-nav:active {
+  border: solid 1px #ee3643;
+  background-color: #ffffff;
 }
 
 .page-active {
