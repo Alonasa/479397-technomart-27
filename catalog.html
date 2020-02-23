@@ -96,7 +96,7 @@
       <div class="container inner-wrapper">
         <div class="breadcrumbs">
           <ul class="breadcrumbs-list">
-            <li class="breadcrumbs-item to-main"><a href="index.html">На Главную</a></li>
+            <li class="breadcrumbs-item to-main"><a href="index.html" aria-label="На Главную"></a></li>
             <li class="breadcrumbs-item catalog"><a href="catalog.htmk">Каталог</a></li>
             <li class="breadcrumbs-item tools"><a href="#">Инструмент</a></li>
             <li class="breadcrumbs-item hammer-drills"><a href="#">Перфораторы</a></li>
@@ -174,13 +174,21 @@
           <div class="sorting light-beige">
             <h3>Сортировка:</h3>
             <ul class="sorting-block">
-              <li class="red-text"><a href="#">По цене</a></li>
-              <li class="red-dotted"><a href="#">По типу</a></li>
-              <li class="red-dotted"><a href="#">По функционалу</a></li>
+              <li class="sorting-button red-text"><a href="#">По цене</a></li>
+              <li class="sorting-button red-dotted"><a href="#">По типу</a></li>
+              <li class="sorting-button red-dotted"><a href="#">По функционалу</a></li>
             </ul>
             <div class="sorting-buttons">
-              <a class="button-sorting arrow-up arow-up-set visually-hidden" href="#">По возрастанию</a>
-              <a class="button-sorting arrow-down visually-hidden" href="#">По убыванию</a>
+              <a class="button-sorting arrow-up arow-up-set" href="#" aria-label="По возрастанию">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#231F20" d="M5.5 0L0 10h11z"></path>
+                </svg>
+              </a>
+              <a class="button-sorting arrow-down" href="#" aria-label="По убыванию">
+                <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+                  <path fill="#231F20" d="M5.5 10L0 0h11"></path>
+                </svg>
+              </a>
             </div>
           </div>
           <section class="products">
