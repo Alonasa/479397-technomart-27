@@ -275,6 +275,7 @@ img {
 }
 
 .nav-secondline {
+  width: 940px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -295,7 +296,7 @@ img {
   font-size: 16px;
   line-height: 1.44;
   letter-spacing: -0.5px;
-  width: 225px;
+  width: 220px;
   min-height: 60px;
   padding-top: 48px;
   padding-bottom: 41px;
@@ -304,6 +305,10 @@ img {
 
 .shop-description span {
   display: block;
+}
+
+.secondline-contact {
+  width: 290px;
 }
 
 .secondline-contact .text-large{
