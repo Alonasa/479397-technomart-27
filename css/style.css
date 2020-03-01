@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -292,7 +292,7 @@ img {
 
 .shop-description {
   font-style: italic;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.44;
   letter-spacing: -0.5px;
@@ -311,7 +311,7 @@ img {
   width: 290px;
 }
 
-.secondline-contact .text-large{
+.secondline-contact .text-large {
   padding-left: 26px;
 }
 
@@ -829,12 +829,12 @@ img {
   position: absolute;
   height: 20px;
   bottom: 54px;
-  left: 44%;
+  left: 47%;
 }
 
 .slider-controller {
   padding: 0;
-  margin: 6px;
+  margin: 4px;
   width: 10px;
   height: 10px;
   border: 2px solid #f4f7f9;
@@ -900,7 +900,7 @@ img {
 }
 
 .item-hover .button {
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   padding: 8px 15px;
   width: 135px;
   -webkit-box-sizing: border-box;
@@ -985,7 +985,7 @@ img {
 .popular-item,
 .product {
   width: 220px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
   font-weight: bold;
   line-height: 1.06;
@@ -1041,7 +1041,7 @@ img {
 
 .popular-item-header,
 .product-name {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   margin: 0;
   padding: 9px 16px;
   font-size: 18px;
@@ -1164,7 +1164,7 @@ img {
 
 .services-description {
   width: 940px;
-  margin: 40px 0 57px;
+  margin: 40px 0 68px;
 }
 
 .services-list,
@@ -1252,7 +1252,7 @@ img {
 }
 
 .services-advantages {
-  width: 400px;
+  margin: 0;
 }
 
 .services-button,
@@ -1293,7 +1293,7 @@ img {
 .service-inner-description,
 .services-advantages,
 .description-offers {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   font-weight: normal;
   line-height: 1.85;
@@ -1378,7 +1378,7 @@ img {
   font-size: 30px;
   line-height: 1;
   text-transform: uppercase;
-  font-family: 'Cuprum', 'Arial', sans-serif;
+  font-family: "Cuprum", "Arial", sans-serif;
   font-weight: normal;
   margin-top: 0;
 }
@@ -1487,7 +1487,7 @@ img {
   color: #a9a9a9;
   padding: 8px 15px;
   font-size: 13px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
 }
 
 .modal-contact-data [placeholder] {
@@ -1820,7 +1820,7 @@ img {
 }
 
 .breadcrumbs-item {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.38;
   text-transform: uppercase;
@@ -1861,7 +1861,7 @@ img {
 .sorting h3,
 .filter {
  margin: 0;
- font-family: 'PT Sans', 'Arial', sans-serif;
+ font-family: "PT Sans", "Arial", sans-serif;
  font-size: 13px;
  line-height: 1.38;
  text-transform: uppercase;
@@ -2207,7 +2207,7 @@ img {
 }
 
 .product-name {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.11;
@@ -2229,7 +2229,7 @@ img {
 }
 
 .button-nav {
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   display: inline-block;
   -webkit-box-sizing: border-box;
@@ -2356,7 +2356,7 @@ img {
 .catalog-article {
   margin: 0;
   width: 911px;
-  font-family: 'PT Sans', 'Arial', sans-serif;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 1.85;
 }
