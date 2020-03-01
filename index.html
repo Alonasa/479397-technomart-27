@@ -27,16 +27,19 @@
                17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z"/>
             </svg>
           </form>
-          <a class="firstline-user-block firstline-buttons firstline-bookmarks" href="#">Закладки: <span>0</span></a>
-          <a class="firstline-user-block firstline-buttons firstline-cart" href="#">Корзина: <span>0</span></a>
-          <a class="firstline-user-block button-green" href="#">Оформить заказ</a>
+          <div class="firstline-user">
+            <a class="firstline-user-block firstline-buttons firstline-bookmarks" href="#">Закладки: <span>0</span></a>
+            <a class="firstline-user-block firstline-buttons firstline-cart" href="#">Корзина: <span>0</span></a>
+            <a class="firstline-user-block button-green" href="#">Оформить заказ</a>
+          </div>
         </div>
       </div>
       <div class="nav-huge-block">
         <div class="nav-secondline container">
           <div class="shop">
             <p class="shop-description description-red">
-              Интернет-магазин строительных материалов и инструмента для ремонта
+              Интернет-магазин строительных материалов
+              <span>и инструментов для ремонта</span>
             </p>
           </div>
           <div class="secondline-contact">
@@ -100,14 +103,14 @@
         </ul>
         <div class="slider-block">
           <ul class="slider">
-            <li class="slider-item slider-1">
+            <li class="slider-item slider-choosen">
               <div class="black-transparent">
                 <h3>Дрели</h3>
                 <p>Соседям на радость!</p>
               </div>
               <a class="button button-red" href="catalog.html">Открыть каталог</a>
             </li>
-            <li class="slider-item slider-2">
+            <li class="slider-item">
               <div class="black-transparent">
                 <h3>Перфораторы</h3>
                 <p>Настоящие мужские игрушки</p>
@@ -122,7 +125,7 @@
             </div>
             <div class="slider-arrows">
               <button class="slider-arrow arrow-next" type="button" aria-label="Вперед"></button>
-              <button class="slider-arrow arrow-previous" type="button" aria-label="Назад"></button>
+              <button class="slider-arrow arrow-previous arrow-choosen" type="button" aria-label="Назад"></button>
             </div>
           </div>
         </div>
@@ -214,18 +217,18 @@
             </p>
           </div>
           <ul class="services-list">
-            <li class="service-1">
+            <li class="service">
               <button type="button" class="services-button button-choosen button-delivery">Доставка</button>
             </li>
-            <li class="service-2">
+            <li class="service">
               <button type="button" class="services-button button-warrancy">Гарантия</button>
             </li>
-            <li class="service-3">
+            <li class="service">
               <button type="button" class="services-button button-credit">Кредит</button>
             </li>
           </ul>
           <ul class="services-list-inner">
-            <li class="service-offer service-delivery">
+            <li class="service-offer service-delivery service-choosen">
               <h3 class="service-inner-name">Доставка</h3>
               <p class="service-inner-description">
                 Мы с удовольствием доставим ваш товар прямо
@@ -234,7 +237,7 @@
                 поднимая его на ваш этаж!
               </p>
             </li>
-            <li class="service-offer service-warrancy button-not-choosen">
+            <li class="service-offer service-warrancy">
               <h3 class="service-inner-name">Гарантия</h3>
               <p class="service-inner-description">
                 Если купленный у нас товар поломается или заискрит,<br/>
@@ -244,7 +247,7 @@
                 Дом уж восстановите как-нибудь сами.
               </p>
             </li>
-            <li class="service-offer service-credit button-not-choosen">
+            <li class="service-offer service-credit">
               <h3 class="service-inner-name">Кредит</h3>
               <p class="service-inner-description">
                 Залезть в долговую яму стало проще!<br/>
@@ -269,7 +272,7 @@
               <li class="delivery-partner">Автотрейдинг</li>
               <li class="delivery-partner">ЖелДорЭкспедиция</li>
             </ul>
-            <a href="" class="button button-red details-button">Подробнее о компании</a>
+            <a href="#" class="button button-red details-button">Подробнее о компании</a>
           </div>
           <div class="description-contacts">
             <h2 class="description-company-offer">Контакты</h2>
@@ -278,31 +281,6 @@
               <img src="img/pictures/map.png" alt="Адрес офиса: г.Санкт-Петербург, ул.Б.Конюшенная, д.19" width="300" height="158" class="map-img">
             </p>
             <a href="contact-form.html" class="button button-red button-contacts" target="_parent">Заблудились? Напишите нам!</a>
-            <section class="modal modal-contact modal-red-stripe">
-              <form class="modal-request-form" action="/send.php" method="post">
-                <div class="modal-request">
-                  <div class="modal-contact-data">
-                    <label for="name">Ваше имя:
-                    <input type="text" name="name" id="name" placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{3,}" autofocus/></label>
-                    <label for="e-mail">Ваш e-mail:
-                    <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com"/></label>
-                  </div>
-                  <label class="label-message" for="message">Текст письма:</label>
-                  <textarea name="message" id="message" rows="5" cols="15" placeholder="В свободной форме"></textarea>
-                </div>
-                <p class="modal-send">
-                  <button class="button button-red button-send" type="submit" name="send-request">Отправить</button>
-                </p>
-                <button class="modal-close" type="button" name="button-close-modal" aria-label="Закрыть окно"></button>
-              </form>
-            </section>
-            <section class="modal modal-map">
-              <h2 class="visually-hidden">Как до нас добраться</h2>
-              <p><img src="img/pictures/map.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
-              <button class="modal-close" type="button">
-                <span class="visually-hidden">Закрыть</span>
-              </button>
-            </section>
           </div>
         </div>
       </section>
@@ -311,6 +289,7 @@
       <div class="footer footer-row-1 light-blue-background">
         <div class="container footer-wrapper">
           <section class="footer-details1">
+            <h3 class="visually-hidden">Информация о товарах</h3>
             <a class="logo-footer" href="#">
               <img src="img/icons/logo-technomart.svg" alt="Магазин Техномарт" width="138" height="23">
             </a>
@@ -323,15 +302,16 @@
             </ul>
           </section>
           <section class="footer-details2 footer-links">
+            <h3 class="visually-hidden">Наша продукция</h3>
             <div class="footer-contacts">
               <p class="footer-contacts-adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
               <a class="footer-contacts-phone" href="tel:+78125550555">+7 (812) 555-05-55</a>
             </div>
             <ul class="footer-products text-yellow">
-              <li class="footer-item"><a href="">Материалы</a></li>
-              <li class="footer-item"><a href="">Техника</a></li>
-              <li class="footer-item"><a href="">Инструмент</a></li>
-              <li class="footer-item"><a href="">Спецпредложения</a></li>
+              <li class="footer-item"><a href="#">Материалы</a></li>
+              <li class="footer-item"><a href="#">Техника</a></li>
+              <li class="footer-item"><a href="#">Инструмент</a></li>
+              <li class="footer-item"><a href="#">Спецпредложения</a></li>
             </ul>
           </section>
         </div>
@@ -369,6 +349,7 @@
             </ul>
           </div>
           <section class="contact-resources">
+            <h3 class="visually-hidden">Контакты для связи и партнеры</h3>
             <div class="contact contact-email">
               <p>Обратная связь: </p>
               <a class="text-yellow" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
@@ -381,5 +362,42 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal modal-contact modal-red-stripe">
+      <h2 class="visually-hidden">Контактная форма для помощи и обратной связи</h2>
+      <form class="modal-request-form" action="/send.php" method="post">
+        <div class="modal-request">
+          <div class="modal-contact-data">
+            <label for="name">Ваше имя:
+            <input type="text" name="name" id="name" placeholder="Имя Фамилия" pattern="[A-Za-zА-Яа-яЁё]{3,}" autofocus/></label>
+            <label for="e-mail">Ваш e-mail:
+            <input type="email" name="e-mail" id="e-mail" placeholder="email@example.com"/></label>
+          </div>
+          <label class="label-message" for="message">Текст письма:</label>
+          <textarea name="message" id="message" rows="5" cols="15" placeholder="В свободной форме"></textarea>
+        </div>
+        <p class="modal-send">
+          <button class="button button-red button-send" type="submit" name="send-request">Отправить</button>
+        </p>
+        <button class="modal-close" type="button" name="button-close-modal" aria-label="Закрыть окно"></button>
+      </form>
+    </section>
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p><img src="img/pictures/map.jpg" width="940" height="446" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
+      <button class="modal-close" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
+    </section>
+    <section class="modal modal-added-to-cart modal-red-stripe">
+      <h2 class="modal-header">Товар добавлен в корзину!</h2>
+      <button class="visually-hidden" type="button" aria-label="Закрыть окно"></button>
+      <div class="modal-order-window">
+        <a class="button button-red button-catalog-modal button-make-order" href="#">Оформить заказ</a>
+        <a class="button button-white button-catalog-modal" href="index.html">Продолжить покупки</a>
+      </div>
+      <button class="modal-close" type="button" name="button-close-modal" aria-label="Закрыть окно"></button>
+    </section>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>
