@@ -294,7 +294,8 @@ img {
   font-family: 'PT Sans', 'Arial', sans-serif;
   font-size: 16px;
   line-height: 1.44;
-  width: 210px;
+  letter-spacing: -0.5px;
+  width: 225px;
   min-height: 60px;
   padding-top: 48px;
   padding-bottom: 41px;
