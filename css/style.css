@@ -720,6 +720,7 @@ img {
   cursor: pointer;
   text-align: center;
   display: inline-block;
+  vertical-align: middle;
   word-break: break-all;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -733,6 +734,7 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
+  vertical-align: middle;
   word-break: break-all;
 }
 
@@ -910,6 +912,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   display: inline-block;
+  vertical-align: middle;
   font-weight: normal;
   word-break: break-all;
 }
@@ -955,6 +958,7 @@ img {
   background-color: #63a63e;
   border: none;
   display: inline-block;
+  vertical-align: middle;
   word-break: break-all;
 }
 
@@ -1326,6 +1330,7 @@ img {
           box-sizing: border-box;
   margin-top: 28px;
   display: inline-block;
+  vertical-align: middle;
   word-break: break-all;
 }
 
@@ -1401,6 +1406,7 @@ img {
   padding: 9px 15px;
   width: 300px;
   display: inline-block;
+  vertical-align: middle;
   word-break: break-all;
   margin-bottom: 20px;
 }
@@ -1523,6 +1529,7 @@ img {
 .button-send {
   width: 460px;
   display: inline-block;
+  vertical-align: middle;
   word-break: break-all;
   padding: 11px 15px;
   margin-left: 80px;
@@ -1757,10 +1764,10 @@ img {
 
 .social-button a {
   display: inline-block;
+  vertical-align: middle;
   width: 42px;
   line-height: 42px;
   text-align: center;
-  vertical-align: middle;
 }
 
 .social-button:nth-of-type(n+2) a {
@@ -1948,6 +1955,7 @@ img {
 
 .filter-interval label {
   display: inline-block;
+  vertical-align: middle;
   vertical-align: top;
   width: 50%;
   font-size: 17px;
@@ -2232,6 +2240,7 @@ img {
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
   display: inline-block;
+  vertical-align: middle;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   cursor: pointer;
@@ -2239,7 +2248,6 @@ img {
   min-width: 38px;
   line-height: 28px;
   text-align: center;
-  vertical-align: middle;
   border-radius: 4px;
   margin-right: 9px;
 }
@@ -2334,6 +2342,7 @@ img {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .button-make-order {
