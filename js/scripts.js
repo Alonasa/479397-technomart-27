@@ -3,6 +3,8 @@ if (!document.querySelector(".page-inner")){
   let popup = document.querySelector(".modal-contact");
   let close = popup.querySelector(".modal-close");
   let userName = popup.querySelector("[name=name]");
+  let userEmail = popup.querySelector("[name=e-mail]");
+  let form = popup.querySelector(".modal-request-form");
 
 
   let buttonMap = document.querySelector(".map");
@@ -27,6 +29,22 @@ if (!document.querySelector(".page-inner")){
     evt.preventDefault();
       if (popup.classList.contains("modal-contact-show")) {
         popup.classList.remove("modal-contact-show");
+        popup.classList.remove("modal-error");
+      }
+    }
+  });
+
+  form.addEventListener("submit", function (evt) {
+    evt.preventDefault();
+    if (!userName.value || !userEmail.value) {
+      evt.preventDefault();
+      popup.classList.remove("modal-error");
+      popup.offsetWidth = popup.offsetWidth;
+      popup.classList.add("modal-error");
+      console.log("Нужно ввести имя и e-mail");
+    } else {
+      if (isStorageSupport) {
+        localStorage.setItem("mail", userEmail.value);
       }
     }
   });
