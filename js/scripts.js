@@ -5,7 +5,7 @@ if (!document.querySelector(".page-inner")){
   let userName = popup.querySelector("[name=name]");
 
 
-  let buttonMap = document.querySelector(".details-button");
+  let buttonMap = document.querySelector(".map");
   let mapPopup = document.querySelector(".modal-map");
   let mapClose = mapPopup.querySelector(".modal-close");
 
