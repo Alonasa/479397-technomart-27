@@ -1153,7 +1153,7 @@ img {
 
 .services {
   background-color: #f4f7f9;
-  height: 522px;
+  min-height: 522px;
   margin-bottom: 78px;
 }
 
@@ -1191,12 +1191,9 @@ img {
   height: 279px;
   background-image: url("../img/pictures/shadow.png");
   background-repeat: no-repeat;
-  top: 50%;
+  top: -40px;
   right: 0;
   background-size: 100%;
-  -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
 }
 
 .services-list-inner {
@@ -1222,6 +1219,7 @@ img {
   top: 23px;
   right: -344px;
   background-size: 100%;
+  z-index: 1;
 }
 
 .service-warrancy::after {
@@ -1234,6 +1232,7 @@ img {
   top: 1px;
   right: -353px;
   background-size: 100%;
+  z-index: 1;
 }
 
 .service-credit::after {
@@ -1246,6 +1245,7 @@ img {
   top: 0;
   right: -355px;
   background-size: 100%;
+  z-index: 1;
 }
 
 .services-header {
@@ -1310,6 +1310,8 @@ img {
 .service-inner-description {
   width: 275px;
   margin-top: 22px;
+  position: relative;
+  z-index: 1000;
 }
 
 .service-warrancy p {
